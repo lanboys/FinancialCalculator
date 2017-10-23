@@ -1,24 +1,17 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: 520
-  Date: 2017/10/23
-  Time: 9:13
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
     <title>cal_history_list</title>
-    <style>
-        td:nth-child(2n+1){
-            background-color: chartreuse;
-        }
+
+    <style type="text/css">
+        @import url(cal_history_list.css);
     </style>
+
 </head>
 <body>
 
 <table cellpadding="5" cellspacing="0" border="5">
-    <caption>理财计算器</caption>
+    <caption class="h1">理财计算器</caption>
     <thead>
     <tr bgcolor="#e9967a">
         <th> 平台</th>
