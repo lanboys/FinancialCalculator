@@ -91,7 +91,7 @@ public class HistoryDAOImpl implements IHistoryDAO {
             rs = ps.executeQuery();
 
             while (rs.next()) {
-                System.out.print("");
+                System.out.print("next ");
             }
         } catch (Exception e) {
             e.printStackTrace();
