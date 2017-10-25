@@ -2,129 +2,74 @@ package com.bing.lan.fc.dao.impl;
 
 import com.bing.lan.fc.dao.IHistoryDAO;
 import com.bing.lan.fc.domian.History;
+import com.bing.lan.fc.jdbc.IResultSetHandler;
+import com.bing.lan.fc.jdbc.JdbcTemplate;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
-import static com.bing.lan.fc.db.conn.Contants.TABLE_FC_HISTORY;
 
 public class HistoryDAOImpl implements IHistoryDAO {
 
     @Override
     public void save(History obj) {
-        List<History> list = new ArrayList<>();
-        Connection conn = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        try {
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            close(conn, ps, rs);
-        }
     }
 
     @Override
     public void update(History obj) {
-        List<History> list = new ArrayList<>();
-        Connection conn = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        try {
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            close(conn, ps, rs);
-        }
     }
 
     @Override
     public void delete(Long id) {
-        List<History> list = new ArrayList<>();
-        Connection conn = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        try {
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            close(conn, ps, rs);
-        }
+        String sql = "DELETE FROM fc_history WHERE id = ?";
+        JdbcTemplate.update(sql, id);
     }
 
     @Override
     public History get(Long id) {
-        List<History> list = new ArrayList<>();
-        Connection conn = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        try {
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            close(conn, ps, rs);
-        }
 
         return null;
     }
 
     @Override
     public List<History> list() {
-        String sql = "SELECT * FROM " + TABLE_FC_HISTORY;
-        List<History> list = new ArrayList<>();
-        Connection conn = null;
-        PreparedStatement ps = null;
-        ResultSet rs = null;
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc",
-                    "root", "admin");
-            ps = conn.prepareStatement(sql);
-            rs = ps.executeQuery();
-
-            while (rs.next()) {
-                System.out.print("next ");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            close(conn, ps, rs);
-        }
-
-        return list;
+        String sql = "SELECT fc_history.*,fc_platform.platformName FROM fc_history LEFT JOIN fc_platform ON fc_history.platform_id = fc_platform.id";
+        return JdbcTemplate.list(sql, new HistoryResultHandler());
     }
 
-    private void close(Connection conn, PreparedStatement ps, ResultSet rs) {
-        try {
-            if (rs != null) {
-                rs.close();
+    class HistoryResultHandler implements IResultSetHandler<List<History>> {
+
+        @Override
+        public List<History> handleResultSet(ResultSet resultSet) throws SQLException {
+            List<History> list = new ArrayList<>();
+            while (resultSet.next()) {
+                History history = new History();
+                list.add(history);
+                history.id = resultSet.getString("id");
+                history.user_id = resultSet.getString("user_id");
+                history.platform_id = resultSet.getString("platform_id");
+                history.platformName = resultSet.getString("platformName");
+                history.desc = resultSet.getString("desc");
+                history.invest_amount = resultSet.getBigDecimal("invest_amount");
+                history.discount_amount = resultSet.getBigDecimal("discount_amount");
+                history.annualized_return = resultSet.getBigDecimal("annualized_return");
+                history.invest_time = resultSet.getLong("invest_time");
+                history.increase_rates = resultSet.getBigDecimal("increase_rates");
+                history.increase_time = resultSet.getLong("increase_time");
+                history.payment_time = resultSet.getLong("payment_time");
+                history.invest_income = resultSet.getBigDecimal("invest_income");
+                history.increase_income = resultSet.getBigDecimal("increase_income");
+                history.actual_invest_amount = resultSet.getBigDecimal("actual_invest_amount");
+                history.actual_annualized_return = resultSet.getBigDecimal("actual_annualized_return");
+                history.actual_invest_income = resultSet.getBigDecimal("actual_invest_income");
+
+                history.calculateInvestIncome();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        } finally {
-            try {
-                if (ps != null) {
-                    ps.close();
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            } finally {
-                try {
-                    if (conn != null) {
-                        conn.close();
-                    }
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
+
+            return list;
         }
     }
 }

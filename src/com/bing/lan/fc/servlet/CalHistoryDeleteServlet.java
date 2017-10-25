@@ -10,12 +10,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/fc/history/list")
-public class CalHistoryListServlet extends HttpServlet {
+@WebServlet("/fc/history/delete")
+public class CalHistoryDeleteServlet extends HttpServlet {
 
     private HistoryDAOImpl dao;
-
-    //http://www.cnblogs.com/weixiaole/p/5196067.html
 
     @Override
     public void init() throws ServletException {
@@ -26,8 +24,10 @@ public class CalHistoryListServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         //super.doGet(req, resp);
-        System.out.println("CalHistoryListServlet.doGet: ");
-        req.setAttribute("historys", dao.list());
-        req.getRequestDispatcher("/WEB-INF/views/cal_history_list.jsp").forward(req, resp);
+        System.out.println("CalHistoryDeleteServlet.doGet: ");
+        String id = req.getParameter("id");
+        dao.delete(Long.valueOf(id));
+        //req.getRequestDispatcher("/fc/history/list").forward(req, resp);
+        resp.sendRedirect("/fc/history/list");
     }
 }
