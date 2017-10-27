@@ -6,7 +6,7 @@
     <title>cal_history_list</title>
 
     <style type="text/css">
-        @import url(cal_history_list.css);
+        @import url("/css/cal_history_list.css");
     </style>
 
 </head>
@@ -59,7 +59,7 @@
         <td><%=history.getActual_invest_income()                        %></td>
         <td><%=history.getActual_annualized_return()                        %></td>
         <td><%=history.getDesc()                        %></td>
-        <td> <a  href="<%="/fc/history/delete?id="+history.getId()%>" >删除</a></td>
+        <td> <a  href="<%="/fc/history?command=delete&id="+history.getId()%>" >删除</a></td>
     </tr>
 
 

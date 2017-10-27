@@ -12,23 +12,23 @@ public class History {
     public String platformName;//平台
     public String desc;//备注
 
-    public BigDecimal invest_amount;//投资金额
-    public BigDecimal discount_amount;//优惠券
+    public BigDecimal invest_amount = new BigDecimal("0");//投资金额
+    public BigDecimal discount_amount = new BigDecimal("0");//优惠券
 
-    public BigDecimal annualized_return;//年化收益率(x%)
+    public BigDecimal annualized_return = new BigDecimal("0");//年化收益率(x%)
     public Long invest_time;//计息时间
 
-    public BigDecimal increase_rates;//加息率(x%)
+    public BigDecimal increase_rates = new BigDecimal("0");//加息率(x%)
     public Long increase_time;//加息天数
 
     public Long payment_time;//起息/到账总时间//
 
-    public BigDecimal invest_income;//收益
-    public BigDecimal increase_income;//加息收益
+    public BigDecimal invest_income = new BigDecimal("0");//收益
+    public BigDecimal increase_income = new BigDecimal("0");//加息收益
 
-    public BigDecimal actual_invest_amount;//实际投资金额
-    public BigDecimal actual_invest_income;//实际收益
-    public BigDecimal actual_annualized_return;//实际年化收益率
+    public BigDecimal actual_invest_amount = new BigDecimal("0");//实际投资金额
+    public BigDecimal actual_invest_income = new BigDecimal("0");//实际收益
+    public BigDecimal actual_annualized_return = new BigDecimal("0");//实际年化收益率
 
     public void calculateInvestIncome() {
         try {
@@ -39,7 +39,6 @@ public class History {
             actual_invest_income = discount_amount.add(invest_income).add(increase_income);
             actual_annualized_return = CalculatorUtil.getActualAnnualizedReturn(actual_invest_amount,
                     invest_time + payment_time, actual_invest_income);
-
         } catch (Exception e) {
             e.printStackTrace();
         }
