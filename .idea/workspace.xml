@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b89c41a6-0a12-4003-93de-16d720c1607c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/CalHistoryDeleteServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resouces/jdbc.sql" afterPath="$PROJECT_DIR$/resouces/jdbc.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bing/lan/fc/domian/History.java" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/domian/History.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/CalHistoryListServlet.java" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/FcHistoryServlet.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,40 +19,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.29108486">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="CalculatorUtil.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="599">
-                  <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="HistoryDAOImpl.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="512">
-                  <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-                  <folding>
-                    <marker date="1509084469425" expanded="true" signature="2384:2509" ph="SELECT * FRO... fc_history" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="cal_history_list.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -105,10 +77,10 @@
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/JdbcTemplate.java" />
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/CalHistoryDeleteServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp" />
-        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/FcHistoryServlet.java" />
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java" />
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/domian/History.java" />
+        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -160,91 +132,7 @@
             <path>
               <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
               <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="libs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="FinancialCalculator_war_exploded" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
               <item name="resouces" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fc" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fc" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fc" type="462c0819:PsiDirectoryNode" />
-              <item name="conn" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fc" type="462c0819:PsiDirectoryNode" />
-              <item name="domian" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fc" type="462c0819:PsiDirectoryNode" />
-              <item name="jdbc" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fc" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="fc" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
@@ -509,7 +397,7 @@
       <workItem from="1508858522230" duration="141000" />
       <workItem from="1508858675239" duration="2272000" />
       <workItem from="1508894991200" duration="25691000" />
-      <workItem from="1509066672937" duration="8096000" />
+      <workItem from="1509066672937" duration="8877000" />
     </task>
     <servers />
   </component>
@@ -531,7 +419,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50454000" />
+    <option name="totallyTimeSpent" value="51235000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -544,6 +432,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -553,7 +442,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0139634805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65617716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -565,7 +454,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63053614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18421052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18421052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -589,13 +478,26 @@
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
-            <marker date="1509084469425" expanded="true" signature="2384:2509" ph="SELECT * FRO... fc_history" />
+            <marker date="1509085578722" expanded="false" signature="42:311" ph="..." />
+            <marker date="1509085578722" expanded="true" signature="415:1998" ph="{...}" />
+            <marker date="1509085578722" expanded="true" signature="2050:2058" ph="{}" />
+            <marker date="1509085578722" expanded="true" signature="2106:2211" ph="{...}" />
+            <marker date="1509085578722" expanded="false" signature="2258:2269" ph=" { " />
+            <marker date="1509085578722" expanded="false" signature="2281:2287" ph=" }" />
+            <marker date="1509085578722" expanded="true" signature="2335:2804" ph="{...}" />
+            <marker date="1509085578722" expanded="true" signature="2361:2486" ph="SELECT * FRO... fc_history" />
+            <marker date="1509085578722" expanded="true" signature="2881:4630" ph="{...}" />
+            <marker date="1509085578722" expanded="true" signature="2988:4624" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -812,25 +714,6 @@
           <folding>
             <marker date="1508894216369" expanded="true" signature="19:56" ph="{...}" />
             <marker date="1508894216369" expanded="true" signature="62:86" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="61" column="46" lean-forward="false" selection-start-line="61" selection-start-column="46" selection-end-line="61" selection-end-column="46" />
-          <folding>
-            <marker date="1509073482987" expanded="true" signature="159:2233" ph="..." />
-            <marker date="1509073482987" expanded="true" signature="166:303" ph="..." />
-            <marker date="1509073482987" expanded="true" signature="231:294" ph="..." />
-            <marker date="1509073482987" expanded="true" signature="310:2225" ph="..." />
-            <marker date="1509073482987" expanded="true" signature="315:391" ph="..." />
-            <marker date="1509073482987" expanded="true" signature="464:2215" ph="..." />
-            <marker date="1509073482987" expanded="true" signature="516:956" ph="..." />
-            <marker date="1509073482987" expanded="true" signature="543:943" ph="..." />
-            <marker date="1509073482987" expanded="true" signature="968:2206" ph="..." />
-            <marker date="1509073482987" expanded="true" signature="1033:2178" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1367,7 +1250,10 @@
         <state relative-caret-position="599">
           <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1509084941410" expanded="true" signature="38:90" ph="..." />
+            <marker date="1509084941410" expanded="true" signature="239:719" ph="{...}" />
+            <marker date="1509084941410" expanded="true" signature="250:418" ph="//..." />
+            <marker date="1509084941410" expanded="true" signature="854:1196" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1463,11 +1349,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
+        <state relative-caret-position="596">
+          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
           <folding>
-            <marker date="1509084469425" expanded="true" signature="2384:2509" ph="SELECT * FRO... fc_history" />
+            <marker date="1509085578722" expanded="false" signature="42:311" ph="..." />
+            <marker date="1509085578722" expanded="true" signature="415:1998" ph="{...}" />
+            <marker date="1509085578722" expanded="true" signature="2050:2058" ph="{}" />
+            <marker date="1509085578722" expanded="true" signature="2106:2211" ph="{...}" />
+            <marker date="1509085578722" expanded="false" signature="2258:2269" ph=" { " />
+            <marker date="1509085578722" expanded="false" signature="2281:2287" ph=" }" />
+            <marker date="1509085578722" expanded="true" signature="2335:2804" ph="{...}" />
+            <marker date="1509085578722" expanded="true" signature="2361:2486" ph="SELECT * FRO... fc_history" />
+            <marker date="1509085578722" expanded="true" signature="2881:4630" ph="{...}" />
+            <marker date="1509085578722" expanded="true" signature="2988:4624" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

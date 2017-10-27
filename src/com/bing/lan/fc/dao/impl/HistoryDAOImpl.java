@@ -37,8 +37,7 @@ public class HistoryDAOImpl implements IHistoryDAO {
                 "\n";
 
         Object[] params = {
-                //obj.getUser_id(),
-                "0",
+                obj.getUser_id(),
                 obj.getPlatform_id(),
                 obj.getDesc(),
                 obj.getInvest_amount(),
