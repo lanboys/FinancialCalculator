@@ -109,7 +109,7 @@ public class HistoryDAOImpl implements IHistoryDAO {
                 history.actual_annualized_return = resultSet.getBigDecimal("actual_annualized_return");
                 history.actual_invest_income = resultSet.getBigDecimal("actual_invest_income");
 
-                history.calculateInvestIncome();
+                //history.calculateInvestIncome();
             }
 
             return list;

@@ -1,0 +1,15 @@
+td:nth-child(2n+1) {
+    background-color: chartreuse;
+}
+
+.table_title {
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 25px;
+}

@@ -7,8 +7,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b89c41a6-0a12-4003-93de-16d720c1607c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resouces/jdbc.sql" afterPath="$PROJECT_DIR$/resouces/jdbc.sql" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/dao/IPlatformDAO.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/PlatformDAOImpl.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/domian/Platform.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/fc_history_list.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/error/error_404.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/error/error_500.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/error/error_exception.jsp" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/FcHistoryServlet.java" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/FcHistoryServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java" afterPath="$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/web/css/cal_history_list.css" afterPath="$PROJECT_DIR$/web/css/fc_history_list.css" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,12 +32,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cal_history_list.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp">
+      <file leaf-file-name="JdbcTemplate.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/JdbcTemplate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-              <folding />
+            <state relative-caret-position="218">
+              <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -36,11 +50,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>History</find>
+      <find>command</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>Platform</replace>
+      <replace>cmd</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>D:\Java\Java_Workspace\FinancialCalculator\src\com\bing\lan\fc\servlet</dir>
     </dirStrings>
@@ -63,7 +86,6 @@
         <option value="$PROJECT_DIR$/web/cal_history_list.css" />
         <option value="$PROJECT_DIR$/web/cal_history_list.jsp" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/dao/IHistoryDAO.java" />
         <option value="$PROJECT_DIR$/libs/servlet-api.jar!/javax/servlet/annotation/WebServlet.class" />
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/test/HistoryDaoTest.java" />
         <option value="$PROJECT_DIR$/resouces/druid.properties" />
@@ -76,11 +98,26 @@
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/CalHistoryListServlet.java" />
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/JdbcTemplate.java" />
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/CalHistoryDeleteServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp" />
-        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/FcHistoryServlet.java" />
-        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java" />
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/domian/History.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/error.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/error_500.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/error_404.jsp" />
+        <option value="$PROJECT_DIR$/web/error/error_500.jsp" />
+        <option value="$PROJECT_DIR$/web/error/error_exception.jsp" />
+        <option value="$PROJECT_DIR$/web/error/error_404.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/web/css/cal_history_list.css" />
+        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java" />
+        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/dao/IHistoryDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/dao/IPlatformDAO.java" />
         <option value="$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java" />
+        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/domian/Platform.java" />
+        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/PlatformDAOImpl.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp" />
+        <option value="$PROJECT_DIR$/web/css/fc_history_list.css" />
+        <option value="$PROJECT_DIR$/libs/servlet-api.jar!/javax/servlet/http/HttpServlet.class" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/fc_history_list.jsp" />
+        <option value="$PROJECT_DIR$/src/com/bing/lan/fc/servlet/FcHistoryServlet.java" />
       </list>
     </option>
   </component>
@@ -121,7 +158,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -137,6 +177,53 @@
             <path>
               <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
               <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fc" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fc" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fc" type="462c0819:PsiDirectoryNode" />
+              <item name="conn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fc" type="462c0819:PsiDirectoryNode" />
+              <item name="domian" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="fc" type="462c0819:PsiDirectoryNode" />
+              <item name="servlet" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -144,6 +231,12 @@
               <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="FinancialCalculator" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="error" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FinancialCalculator" type="b2602c69:ProjectViewProjectNode" />
@@ -166,9 +259,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -187,18 +277,19 @@
     <property name="extract.method.default.visibility" value="private" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Java\Java_Workspace\FinancialCalculator\libs" />
-      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\libs" />
-      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web\WEB-INF\views" />
-      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web\WEB-INF\views" />
-      <recent name="D:\Java\Java_Workspace\FinancialCalculator\resouces" />
+      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web\error" />
       <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web" />
       <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web\WEB-INF" />
-      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\src" />
+      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web\WEB-INF\views" />
+      <recent name="D:\Java\Java_Workspace\FinancialCalculator\resouces" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web\error" />
+      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web\WEB-INF\views" />
+      <recent name="D:\Java\Java_Workspace\FinancialCalculator\libs" />
+      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\libs" />
+      <recent name="D:\Java\Java_WorkSpace\FinancialCalculator\web" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -397,7 +488,8 @@
       <workItem from="1508858522230" duration="141000" />
       <workItem from="1508858675239" duration="2272000" />
       <workItem from="1508894991200" duration="25691000" />
-      <workItem from="1509066672937" duration="8877000" />
+      <workItem from="1509066672937" duration="9613000" />
+      <workItem from="1509325451613" duration="16339000" />
     </task>
     <servers />
   </component>
@@ -419,7 +511,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51235000" />
+    <option name="totallyTimeSpent" value="68310000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,17 +536,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.0139634805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65617716" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4125874" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3065268" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43123543" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.63053614" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18421052" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20891514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983682" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -474,7 +566,27 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="12" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/JdbcTemplate.java</url>
+          <line>12</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/JdbcTemplate.java</url>
+          <line>19</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/JdbcTemplate.java</url>
+          <line>21</line>
+          <properties />
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="22" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -483,21 +595,95 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/fc_history_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="651">
+          <caret line="31" column="23" lean-forward="true" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding>
+            <marker date="1509357329592" expanded="true" signature="212:5908" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="219:355" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="284:346" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="362:5900" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="367:577" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="640:3063" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="734:3055" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="750:3042" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="763:1157" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="805:1143" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="863:1124" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="985:1071" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1170:1375" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1218:1361" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1311:1343" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1388:1591" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1434:1577" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1527:1559" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1604:1811" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1653:1797" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1747:1779" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1824:2002" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1873:1988" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2015:2225" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2067:2211" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2161:2193" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2238:2420" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2288:2406" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2433:2619" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2486:2605" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2632:2796" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2674:2782" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2811:3023" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2854:3009" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3078:3915" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3090:3906" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3100:3240" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3137:3230" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3249:3397" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3289:3387" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3406:3561" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3447:3551" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3570:3721" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3609:3711" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3730:3892" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3773:3882" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3991:5890" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4063:4510" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4090:4497" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4522:5881" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4592:5853" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4605:4673" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4686:4753" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4766:4837" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4850:4923" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4936:5003" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5016:5086" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5099:5168" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5181:5249" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5262:5331" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5344:5415" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5428:5504" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5517:5593" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5606:5686" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5699:5759" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
           <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
           <folding>
-            <marker date="1509085578722" expanded="false" signature="42:311" ph="..." />
-            <marker date="1509085578722" expanded="true" signature="415:1998" ph="{...}" />
-            <marker date="1509085578722" expanded="true" signature="2050:2058" ph="{}" />
-            <marker date="1509085578722" expanded="true" signature="2106:2211" ph="{...}" />
-            <marker date="1509085578722" expanded="false" signature="2258:2269" ph=" { " />
-            <marker date="1509085578722" expanded="false" signature="2281:2287" ph=" }" />
-            <marker date="1509085578722" expanded="true" signature="2335:2804" ph="{...}" />
-            <marker date="1509085578722" expanded="true" signature="2361:2486" ph="SELECT * FRO... fc_history" />
-            <marker date="1509085578722" expanded="true" signature="2881:4630" ph="{...}" />
-            <marker date="1509085578722" expanded="true" signature="2988:4624" ph="{...}" />
+            <marker date="1509350422264" expanded="false" signature="42:311" ph="..." />
+            <marker date="1509350422264" expanded="true" signature="415:1998" ph="{...}" />
+            <marker date="1509350422264" expanded="true" signature="2050:2058" ph="{}" />
+            <marker date="1509350422264" expanded="true" signature="2106:2211" ph="{...}" />
+            <marker date="1509350422264" expanded="false" signature="2258:2269" ph=" { " />
+            <marker date="1509350422264" expanded="false" signature="2281:2287" ph=" }" />
+            <marker date="1509350422264" expanded="true" signature="2335:2804" ph="{...}" />
+            <marker date="1509350422264" expanded="true" signature="2361:2486" ph="SELECT * FRO... fc_history" />
+            <marker date="1509350422264" expanded="true" signature="2881:4632" ph="{...}" />
+            <marker date="1509350422264" expanded="true" signature="2988:4626" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -507,13 +693,14 @@
         <state relative-caret-position="378">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
-            <marker date="1509084579146" expanded="false" signature="41:365" ph="..." />
-            <marker date="1509084579146" expanded="true" signature="596:661" ph="{...}" />
-            <marker date="1509084579146" expanded="true" signature="789:1248" ph="{...}" />
-            <marker date="1509084579146" expanded="true" signature="1359:1454" ph="{...}" />
-            <marker date="1509084579146" expanded="true" signature="1567:1575" ph="{}" />
-            <marker date="1509084579146" expanded="true" signature="1688:1907" ph="{...}" />
-            <marker date="1509084579146" expanded="true" signature="2018:2167" ph="{...}" />
+            <marker date="1509357602869" expanded="false" signature="41:524" ph="..." />
+            <marker date="1509357602869" expanded="true" signature="799:918" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="1046:1481" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="1610:1735" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="1846:3271" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="3384:3392" ph="{}" />
+            <marker date="1509357602869" expanded="true" signature="3505:3728" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="3839:4057" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -522,7 +709,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,7 +716,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -541,17 +726,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/fc_history_list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -571,13 +749,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/IHistoryDAO.java" />
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="63" lean-forward="false" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/libs/servlet-api.jar!/javax/servlet/annotation/WebServlet.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -592,35 +763,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/libs/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="37" column="19" lean-forward="false" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/test/HistoryDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="344">
           <caret line="27" column="2" lean-forward="false" selection-start-line="27" selection-start-column="2" selection-end-line="27" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/IResultSetHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-          <folding>
-            <marker date="1508905614240" expanded="true" signature="38:87" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -635,36 +781,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/IHistoryDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <marker date="1508903398141" expanded="false" signature="37:92" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="15" lean-forward="false" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/servlet/CalHistoryDeleteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="32" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.css" />
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/servlet/CalHistoryDeleteServlet.java" />
     <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/JdbcUtil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
@@ -679,23 +800,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/JdbcTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <marker date="1508934862414" expanded="true" signature="38:120" ph="..." />
-            <marker date="1508934862414" expanded="true" signature="210:723" ph="{...}" />
-            <marker date="1508934862414" expanded="true" signature="796:1247" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resouces/jdbc.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -703,18 +811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/css/cal_history_list.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1508894216369" expanded="true" signature="19:56" ph="{...}" />
-            <marker date="1508894216369" expanded="true" signature="62:86" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1245,39 +1341,275 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java">
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        <state relative-caret-position="105">
+          <caret line="5" column="63" lean-forward="false" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
           <folding>
-            <marker date="1509084941410" expanded="true" signature="38:90" ph="..." />
-            <marker date="1509084941410" expanded="true" signature="239:719" ph="{...}" />
-            <marker date="1509084941410" expanded="true" signature="250:418" ph="//..." />
-            <marker date="1509084941410" expanded="true" signature="854:1196" ph="{...}" />
+            <marker date="1508894216372" expanded="true" signature="4:141" ph="..." />
+            <marker date="1508894216372" expanded="true" signature="217:298" ph="..." />
+            <marker date="1508894216372" expanded="true" signature="226:263" ph="..." />
+            <marker date="1508894216372" expanded="true" signature="272:290" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/servlet/FcHistoryServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+        <state relative-caret-position="210">
+          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
           <folding>
-            <marker date="1509084579146" expanded="false" signature="41:365" ph="..." />
-            <marker date="1509084579146" expanded="true" signature="596:661" ph="{...}" />
-            <marker date="1509084579146" expanded="true" signature="789:1248" ph="{...}" />
-            <marker date="1509084579146" expanded="true" signature="1359:1454" ph="{...}" />
-            <marker date="1509084579146" expanded="true" signature="1567:1575" ph="{}" />
-            <marker date="1509084579146" expanded="true" signature="1688:1907" ph="{...}" />
-            <marker date="1509084579146" expanded="true" signature="2018:2167" ph="{...}" />
+            <marker date="1508894216374" expanded="true" signature="4:141" ph="..." />
+            <marker date="1508894216374" expanded="true" signature="217:289" ph="..." />
+            <marker date="1508894216374" expanded="true" signature="226:261" ph="..." />
+            <marker date="1508894216374" expanded="true" signature="270:281" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/error/error_500.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/error/error_500.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="85" lean-forward="true" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="85" />
+          <folding>
+            <marker date="1509344470541" expanded="true" signature="4:142" ph="..." />
+            <marker date="1509344470541" expanded="true" signature="238:314" ph="..." />
+            <marker date="1509344470541" expanded="true" signature="245:276" ph="..." />
+            <marker date="1509344470541" expanded="true" signature="283:306" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/error/error_404.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1509345051669" expanded="true" signature="4:142" ph="..." />
+            <marker date="1509345051669" expanded="true" signature="237:313" ph="..." />
+            <marker date="1509345051669" expanded="true" signature="244:275" ph="..." />
+            <marker date="1509345051669" expanded="true" signature="282:305" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/error/error_exception.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="80" lean-forward="false" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
+          <folding>
+            <marker date="1509344812846" expanded="true" signature="4:142" ph="..." />
+            <marker date="1509344812846" expanded="true" signature="237:323" ph="..." />
+            <marker date="1509344812846" expanded="true" signature="244:281" ph="..." />
+            <marker date="1509344812846" expanded="true" signature="288:315" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="20" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="18" selection-end-column="21" />
+          <folding>
+            <marker date="1509345716995" expanded="true" signature="90:786" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/util/CalculatorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <marker date="1509350422309" expanded="true" signature="38:90" ph="..." />
+            <marker date="1509350422309" expanded="true" signature="239:720" ph="{...}" />
+            <marker date="1509350422309" expanded="true" signature="250:418" ph="//..." />
+            <marker date="1509350422309" expanded="true" signature="855:1310" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/IResultSetHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <marker date="1508905614240" expanded="true" signature="38:87" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/domian/Platform.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="31" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <marker date="1509352152984" expanded="true" signature="158:311" ph="{...}" />
+            <marker date="1509352152984" expanded="true" signature="335:342" ph="{}" />
+            <marker date="1509352152984" expanded="true" signature="396:467" ph="{...}" />
+            <marker date="1509352152984" expanded="false" signature="494:505" ph=" { " />
+            <marker date="1509352152984" expanded="false" signature="515:521" ph=" }" />
+            <marker date="1509352152984" expanded="false" signature="555:566" ph=" { " />
+            <marker date="1509352152984" expanded="false" signature="579:585" ph=" }" />
+            <marker date="1509352152984" expanded="false" signature="622:633" ph=" { " />
+            <marker date="1509352152984" expanded="false" signature="653:659" ph=" }" />
+            <marker date="1509352152984" expanded="false" signature="713:724" ph=" { " />
+            <marker date="1509352152984" expanded="false" signature="757:763" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/IPlatformDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding>
+            <marker date="1509351746894" expanded="true" signature="37:93" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/fc_history_list.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <folding>
+            <marker date="1509355915018" expanded="true" signature="19:56" ph="{...}" />
+            <marker date="1509355915018" expanded="true" signature="71:95" ph="{...}" />
+            <marker date="1509355915018" expanded="true" signature="100:124" ph="{...}" />
+            <marker date="1509355915018" expanded="true" signature="129:153" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/PlatformDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="28" />
+          <folding>
+            <marker date="1509352395204" expanded="true" signature="42:209" ph="..." />
+            <marker date="1509352395204" expanded="true" signature="316:324" ph="{}" />
+            <marker date="1509352395204" expanded="true" signature="377:385" ph="{}" />
+            <marker date="1509352395204" expanded="true" signature="433:441" ph="{}" />
+            <marker date="1509352395204" expanded="false" signature="489:500" ph=" { " />
+            <marker date="1509352395204" expanded="false" signature="512:518" ph=" }" />
+            <marker date="1509352395204" expanded="true" signature="557:1012" ph="{...}" />
+            <marker date="1509352395204" expanded="true" signature="662:1004" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/servlet-api.jar!/javax/servlet/http/HttpServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="91" column="37" lean-forward="true" selection-start-line="91" selection-start-column="37" selection-end-line="91" selection-end-column="37" />
+          <folding>
+            <marker date="1501680578000" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1501680578000" expanded="false" signature="142:572" ph="..." />
+            <marker date="1501680578000" expanded="true" signature="1431:1438" ph="{}" />
+            <marker date="1501680578000" expanded="true" signature="1552:1822" ph="{...}" />
+            <marker date="1501680578000" expanded="false" signature="1882:1893" ph=" { " />
+            <marker date="1501680578000" expanded="false" signature="1904:1910" ph=" }" />
+            <marker date="1501680578000" expanded="true" signature="2025:2309" ph="{...}" />
+            <marker date="1501680578000" expanded="true" signature="2424:2695" ph="{...}" />
+            <marker date="1501680578000" expanded="true" signature="2809:3079" ph="{...}" />
+            <marker date="1501680578000" expanded="true" signature="3196:3469" ph="{...}" />
+            <marker date="1501680578000" expanded="true" signature="3533:4217" ph="{...}" />
+            <marker date="1501680578000" expanded="true" signature="4335:6908" ph="{...}" />
+            <marker date="1501680578000" expanded="true" signature="7024:7760" ph="{...}" />
+            <marker date="1501680578000" expanded="true" signature="7876:9540" ph="{...}" />
+            <marker date="1501680578000" expanded="true" signature="9625:9815" ph="{...}" />
+            <marker date="1501680578000" expanded="true" signature="9919:10278" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/fc_history_list.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <marker date="1509357329592" expanded="true" signature="212:5908" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="219:355" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="284:346" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="362:5900" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="367:577" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="640:3063" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="734:3055" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="750:3042" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="763:1157" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="805:1143" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="863:1124" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="985:1071" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1170:1375" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1218:1361" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1311:1343" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1388:1591" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1434:1577" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1527:1559" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1604:1811" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1653:1797" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1747:1779" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1824:2002" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="1873:1988" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2015:2225" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2067:2211" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2161:2193" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2238:2420" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2288:2406" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2433:2619" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2486:2605" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2632:2796" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2674:2782" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2811:3023" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="2854:3009" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3078:3915" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3090:3906" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3100:3240" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3137:3230" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3249:3397" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3289:3387" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3406:3561" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3447:3551" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3570:3721" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3609:3711" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3730:3892" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3773:3882" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="3991:5890" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4063:4510" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4090:4497" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4522:5881" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4592:5853" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4605:4673" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4686:4753" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4766:4837" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4850:4923" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="4936:5003" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5016:5086" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5099:5168" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5181:5249" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5262:5331" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5344:5415" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5428:5504" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5517:5593" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5606:5686" ph="..." />
+            <marker date="1509357329592" expanded="true" signature="5699:5759" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/domian/History.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="36" column="0" lean-forward="true" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="273">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <marker date="1509085118498" expanded="false" signature="40:106" ph="..." />
             <marker date="1509085118498" expanded="true" signature="1072:1725" ph="{...}" />
@@ -1347,30 +1679,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/servlet/FcHistoryServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="596">
-          <caret line="40" column="21" lean-forward="true" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        <state relative-caret-position="482">
+          <caret line="84" column="22" lean-forward="false" selection-start-line="84" selection-start-column="22" selection-end-line="84" selection-end-column="22" />
           <folding>
-            <marker date="1509085578722" expanded="false" signature="42:311" ph="..." />
-            <marker date="1509085578722" expanded="true" signature="415:1998" ph="{...}" />
-            <marker date="1509085578722" expanded="true" signature="2050:2058" ph="{}" />
-            <marker date="1509085578722" expanded="true" signature="2106:2211" ph="{...}" />
-            <marker date="1509085578722" expanded="false" signature="2258:2269" ph=" { " />
-            <marker date="1509085578722" expanded="false" signature="2281:2287" ph=" }" />
-            <marker date="1509085578722" expanded="true" signature="2335:2804" ph="{...}" />
-            <marker date="1509085578722" expanded="true" signature="2361:2486" ph="SELECT * FRO... fc_history" />
-            <marker date="1509085578722" expanded="true" signature="2881:4630" ph="{...}" />
-            <marker date="1509085578722" expanded="true" signature="2988:4624" ph="{...}" />
+            <marker date="1509357602869" expanded="false" signature="41:524" ph="..." />
+            <marker date="1509357602869" expanded="true" signature="799:918" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="1046:1481" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="1610:1735" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="1846:3271" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="3384:3392" ph="{}" />
+            <marker date="1509357602869" expanded="true" signature="3505:3728" ph="{...}" />
+            <marker date="1509357602869" expanded="true" signature="3839:4057" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/cal_history_list.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/IHistoryDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding>
+            <marker date="1508903398141" expanded="false" signature="37:92" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/dao/impl/HistoryDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
-          <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
-          <folding />
+          <caret line="55" column="25" lean-forward="true" selection-start-line="55" selection-start-column="25" selection-end-line="55" selection-end-column="25" />
+          <folding>
+            <marker date="1509350422264" expanded="false" signature="42:311" ph="..." />
+            <marker date="1509350422264" expanded="true" signature="415:1998" ph="{...}" />
+            <marker date="1509350422264" expanded="true" signature="2050:2058" ph="{}" />
+            <marker date="1509350422264" expanded="true" signature="2106:2211" ph="{...}" />
+            <marker date="1509350422264" expanded="false" signature="2258:2269" ph=" { " />
+            <marker date="1509350422264" expanded="false" signature="2281:2287" ph=" }" />
+            <marker date="1509350422264" expanded="true" signature="2335:2804" ph="{...}" />
+            <marker date="1509350422264" expanded="true" signature="2361:2486" ph="SELECT * FRO... fc_history" />
+            <marker date="1509350422264" expanded="true" signature="2881:4632" ph="{...}" />
+            <marker date="1509350422264" expanded="true" signature="2988:4626" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/bing/lan/fc/jdbc/JdbcTemplate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

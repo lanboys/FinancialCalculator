@@ -14,6 +14,7 @@ public class CalculatorUtil {
         if (money == null || annualized_return == null || time == null) {
             return new BigDecimal("0");
         }
+
         return money.multiply(new BigDecimal(time))
                 .multiply(annualized_return)
                 .divide(new BigDecimal(365), 2, RoundingMode.HALF_DOWN);
@@ -23,6 +24,10 @@ public class CalculatorUtil {
             Long actualTime, BigDecimal actualIncome) {
 
         if (actualMoney == null || actualIncome == null || actualTime == null) {
+            return new BigDecimal("0");
+        }
+
+        if (actualMoney.intValue() == 0 || actualTime == 0) {
             return new BigDecimal("0");
         }
 
