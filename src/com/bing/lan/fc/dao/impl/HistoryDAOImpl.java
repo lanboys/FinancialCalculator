@@ -33,7 +33,7 @@ public class HistoryDAOImpl implements IHistoryDAO {
                 "\t`actual_annualized_return`\n" +
                 ")\n" +
                 "VALUES\n" +
-                "\t(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); " +
+                "\t(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?);" +
                 "\n";
 
         Object[] params = {
@@ -58,7 +58,46 @@ public class HistoryDAOImpl implements IHistoryDAO {
 
     @Override
     public void update(History obj) {
+        String sql = "INSERT INTO fc_history() VALUES ()";
+        String sql1 = "INSERT INTO `jdbc`.`fc_history` (\n" +
+                "\t`user_id`,\n" +
+                "\t`platform_id`,\n" +
+                "\t`desc`,\n" +
+                "\t`invest_amount`,\n" +
+                "\t`discount_amount`,\n" +
+                "\t`annualized_return`,\n" +
+                "\t`invest_time`,\n" +
+                "\t`increase_rates`,\n" +
+                "\t`increase_time`,\n" +
+                "\t`payment_time`,\n" +
+                "\t`invest_income`,\n" +
+                "\t`increase_income`,\n" +
+                "\t`actual_invest_amount`,\n" +
+                "\t`actual_invest_income`,\n" +
+                "\t`actual_annualized_return`\n" +
+                ")\n" +
+                "VALUES\n" +
+                "\t(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?); " +
+                "\n";
 
+        Object[] params = {
+                obj.getUser_id(),
+                obj.getPlatform_id(),
+                obj.getDesc(),
+                obj.getInvest_amount(),
+                obj.getDiscount_amount(),
+                obj.getAnnualized_return(),
+                obj.getInvest_time(),
+                obj.getIncrease_rates(),
+                obj.getIncrease_time(),
+                obj.getPayment_time(),
+                obj.getInvest_income(),
+                obj.getIncrease_income(),
+                obj.getActual_invest_amount(),
+                obj.getActual_invest_income(),
+                obj.getActual_annualized_return()
+        };
+        JdbcTemplate.update(sql1, params);
     }
 
     @Override
@@ -79,7 +118,8 @@ public class HistoryDAOImpl implements IHistoryDAO {
                 "\tfc_history.*, fc_platform.platformName\n" +
                 "FROM\n" +
                 "\tfc_history\n" +
-                "LEFT JOIN fc_platform ON fc_history.platform_id = fc_platform.id";
+                "LEFT JOIN fc_platform ON fc_history.platform_id = fc_platform.id\n" +
+                "ORDER BY id DESC";
         return JdbcTemplate.list(sql, new HistoryResultHandler());
     }
 

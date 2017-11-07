@@ -14,5 +14,5 @@ public interface IHistoryDAO {
 
     public History get(Long id);
 
-    public List list();
+    public List<History> list();
 }

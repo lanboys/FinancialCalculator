@@ -15,9 +15,13 @@
 
 <%
     List<History> histories = (List<History>) request.getAttribute("histories");
-    History formHistory = histories.get(0);
-
     List<Platform> platforms = (List<Platform>) request.getAttribute("platforms");
+    History history = null;
+    if (histories.size() > 0) {
+        history = histories.get(0);
+    }
+
+
 %>
 <%--<%= historys %>--%>
 <h1>理财计算器</h1>
@@ -33,7 +37,7 @@
             <td>
                 <select name="platform_id" title="请选择平台">
                     <% for (Platform platform : platforms) {%>
-                    <option value="<%=platform.getId()%>">
+                    <option value="<%=platform.getId()%>" <%=(history != null && history.getPlatform_id().equals(platform.getId())) ? "selected" : ""%>>
                         <%=platform.getPlatformName()%>
                     </option>
                     <%} %>
@@ -44,53 +48,69 @@
         <tr>
             <td> 投资金额(元):</td>
             <td>
-                <input type="text" name="invest_amount" value="10000" placeholder="请输入投资金额"
+                <input type="text" name="invest_amount"
+                       value="<%=history != null?history.getInvest_amount():"10000"%>"
+                       placeholder="请输入投资金额"
                        required>
             </td>
         </tr>
         <tr>
             <td> 优惠券(元)</td>
             <td>
-                <input type="text" name="discount_amount" value="10" placeholder="请输入优惠券金额"
+                <input type="text" name="discount_amount"
+                       value="<%=history != null?history.getDiscount_amount():"10"%>"
+                       placeholder="请输入优惠券金额"
                        required>
             </td>
         </tr>
         <tr>
             <td> 年化收益率(x%)</td>
             <td>
-                <input type="text" name="annualized_return" value="5" placeholder="请输入年化收益率"
+                <input type="text" name="annualized_return"
+                       value="<%=history != null ? history.getAnnualized_return() : "8"%>"
+                       placeholder="请输入年化收益率"
                        required>
             </td>
         </tr>
         <tr>
             <td> 计息时间(day)</td>
             <td>
-                <input type="text" name="invest_time" value="30" placeholder="请输入计息时间" required>
+                <input type="text" name="invest_time"
+                       value="<%=history != null ? history.getInvest_time() : "30"%>"
+                       placeholder="请输入计息时间" required>
             </td>
         </tr>
         <tr>
             <td> 加息券年化收益率(x%)</td>
             <td>
-                <input type="text" name="increase_rates" value="2" placeholder="请输入加息券年化收益率"
+                <input type="text" name="increase_rates"
+                       value="<%=history != null ? history.getIncrease_rates() : "0"%>"
+                       placeholder="请输入加息券年化收益率"
                        required>
             </td>
         </tr>
         <tr>
             <td> 加息券天数(day)</td>
             <td>
-                <input type="text" name="increase_time" value="10" placeholder="请输入加息券天数" required>
+                <input type="text" name="increase_time"
+                       value="<%=history != null ? history.getIncrease_time() : "0"%>"
+                       placeholder="请输入加息券天数" required>
             </td>
         </tr>
         <tr>
             <td> 起息/到账总时间(day)</td>
             <td>
-                <input type="text" name="payment_time" value="2" placeholder="请输入起息/到账总时间" required>
+                <input type="text" name="payment_time"
+                       value="<%=history != null ? history.getPayment_time() : "2"%>"
+                       placeholder="请输入起息/到账总时间" required>
             </td>
         </tr>
         <tr>
             <td> 备注</td>
             <td>
-                <input type="text" name="desc" value="新手专享" placeholder="请输入备注" required>
+                <input type="text" name="desc"
+                       value="<%=history != null ? history.getDesc() : ""%>"
+                       placeholder="请输入备注">
             </td>
         </tr>
 
@@ -98,6 +118,7 @@
         <tr>
             <td colspan="2" align="right">
                 <input type="hidden" value="save" name="cmd">
+                <input type="hidden" value="1" name="user_id">
                 <input type="submit">
                 <input type="reset">
             </td>
@@ -116,31 +137,43 @@
     <tr>
         <td> 收益(元)</td>
         <td>
-            <input type="text" name="invest_income" placeholder="收益" disabled>
+            <input type="text"
+                   name="invest_income"
+                   value="<%=history != null ? history.getInvest_income() : "0"%>"
+                   placeholder="收益"
+                   disabled>
         </td>
     </tr>
     <tr>
         <td> 加息券收益(元)</td>
         <td>
-            <input type="text" name="increase_income" placeholder="加息券收益" disabled>
+            <input type="text" name="increase_income"
+                   value="<%=history != null ? history.getIncrease_income() : "0"%>"
+                   placeholder="加息券收益" disabled>
         </td>
     </tr>
     <tr>
         <td> 实际投资金额(元)</td>
         <td>
-            <input type="text" name="actual_invest_amount" placeholder="实际投资金额" disabled>
+            <input type="text" name="actual_invest_amount"
+                   value="<%=history != null ? history.getActual_invest_amount() : "0"%>"
+                   placeholder="实际投资金额" disabled>
         </td>
     </tr>
     <tr>
         <td> 实际收益(元)</td>
         <td>
-            <input type="text" name="actual_invest_income" placeholder="实际收益" disabled>
+            <input type="text" name="actual_invest_income"
+                   value="<%=history != null ? history.getActual_invest_income() : "0"%>"
+                   placeholder="实际收益" disabled>
         </td>
     </tr>
     <tr>
         <td> 实际年化收益率(x%)</td>
         <td>
-            <input type="text" name="actual_annualized_return" placeholder="实际年化收益率" disabled>
+            <input type="text" name="actual_annualized_return"
+                   value="<%=history != null ? history.getActual_annualized_return() : "0"%>%"
+                   placeholder="实际年化收益率" disabled>
         </td>
     </tr>
 
@@ -173,37 +206,37 @@
     </thead>
     <tbody>
 
-    <% for (History history : histories) {%>
+    <% for (History history1 : histories) {%>
     <tr bgcolor="aqua">
-        <td><%=history.getPlatformName()                        %>
+        <td><%=history1.getPlatformName()                        %>
         </td>
-        <td><%=history.getInvest_amount()                      %>
+        <td><%=history1.getInvest_amount()                      %>
         </td>
-        <td><%=history.getDiscount_amount()                        %>
+        <td><%=history1.getDiscount_amount()                        %>
         </td>
-        <td><%=history.getAnnualized_return()                        %>
+        <td><%=history1.getAnnualized_return()                        %>
         </td>
-        <td><%=history.getInvest_time()                        %>
+        <td><%=history1.getInvest_time()                        %>
         </td>
-        <td><%=history.getIncrease_rates()                        %>
+        <td><%=history1.getIncrease_rates()                        %>
         </td>
-        <td><%=history.getIncrease_time()                        %>
+        <td><%=history1.getIncrease_time()                        %>
         </td>
-        <td><%=history.getPayment_time()                        %>
+        <td><%=history1.getPayment_time()                        %>
         </td>
-        <td><%=history.getInvest_income()                        %>
+        <td><%=history1.getInvest_income()                        %>
         </td>
-        <td><%=history.getIncrease_income()                        %>
+        <td><%=history1.getIncrease_income()                        %>
         </td>
-        <td><%=history.getActual_invest_amount()                        %>
+        <td><%=history1.getActual_invest_amount()                        %>
         </td>
-        <td><%=history.getActual_invest_income()                        %>
+        <td><%=history1.getActual_invest_income()                        %>
         </td>
-        <td><%=history.getActual_annualized_return()                        %>
+        <td><%=history1.getActual_annualized_return()                        %>
         </td>
-        <td><%=history.getDesc()                        %>
+        <td><%=history1.getDesc()                        %>
         </td>
-        <td><a href="<%="/fc/history?cmd=delete&id="+history.getId()%>">删除</a></td>
+        <td><a href="<%="/fc/history?cmd=delete&id="+history1.getId()%>">删除</a></td>
     </tr>
 
 

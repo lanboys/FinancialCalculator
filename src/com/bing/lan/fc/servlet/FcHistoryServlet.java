@@ -32,9 +32,10 @@ public class FcHistoryServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("UTF-8");
+
         //super.doGet(req, resp);
         System.out.println("FcHistoryServlet.doGet: ");
-
         String cmd = req.getParameter("cmd");
         if ("list".equals(cmd)) {
             list(req, resp);
@@ -55,7 +56,8 @@ public class FcHistoryServlet extends HttpServlet {
     }
 
     private void save(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String platform_id = req.getParameter("platform_id ");
+        String user_id = req.getParameter("user_id");
+        String platform_id = req.getParameter("platform_id");
         String invest_amount = req.getParameter("invest_amount");
         String discount_amount = req.getParameter("discount_amount");
         String annualized_return = req.getParameter("annualized_return");
@@ -69,6 +71,7 @@ public class FcHistoryServlet extends HttpServlet {
         //String increase_income = req.getParameter("increase_income");
 
         History history = new History();
+        history.setUser_id(user_id);
         history.setPlatform_id(platform_id);
         history.setInvest_amount(new BigDecimal(invest_amount));
         history.setDiscount_amount(new BigDecimal(discount_amount));

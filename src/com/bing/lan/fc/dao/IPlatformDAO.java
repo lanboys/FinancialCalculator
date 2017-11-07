@@ -14,5 +14,5 @@ public interface IPlatformDAO {
 
     public Platform get(Long id);
 
-    public List list();
+    public List<Platform> list();
 }

@@ -17,7 +17,7 @@ public class CalculatorUtil {
 
         return money.multiply(new BigDecimal(time))
                 .multiply(annualized_return)
-                .divide(new BigDecimal(365), 2, RoundingMode.HALF_DOWN);
+                .divide(new BigDecimal(36500), 2, RoundingMode.HALF_DOWN);
     }
 
     public static BigDecimal getActualAnnualizedReturn(BigDecimal actualMoney,
@@ -31,7 +31,7 @@ public class CalculatorUtil {
             return new BigDecimal("0");
         }
 
-        return actualIncome.multiply(new BigDecimal(365))
+        return actualIncome.multiply(new BigDecimal(36500))
                 .divide(actualMoney, 4, RoundingMode.HALF_DOWN)
                 .divide(new BigDecimal(actualTime), 4, RoundingMode.HALF_DOWN);
     }
